@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #24527a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#note-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#note-form label {
+    font-weight: bold;
+}
+
+#note-input,
+#note-category,
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#note-input {
+    flex: 1;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #24527a;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #183b59;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+#search-input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+}
+
+.note-card p {
+    margin: 8px 0;
+}
+
+.note-card .category-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.category-personal {
+    border-left: 5px solid teal;
+}
+
+.category-work {
+    border-left: 5px solid darkred;
+}
+
+.category-study {
+    border-left: 5px solid blue;
+}
+
+.category-personal .category-label {
+    color: teal;
+}
+
+.category-work .category-label {
+    color: darkred;
+}
+
+.category-study .category-label {
+    color: blue;
+}
+
+.note-date {
+    color: #666;
+    font-size: 13px;
+}
+
+.delete-btn {
+    margin-top: 8px;
+    background-color: #b22222;
+}
+
+.delete-btn:hover {
+    background-color: #7d1717;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #note-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #note-form label {
+        margin-top: 5px;
+    }
+
+    #note-input,
+    #note-category,
+    #note-form button {
+        width: 100%;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
